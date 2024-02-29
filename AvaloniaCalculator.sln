@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34601.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaloniaCalculator", "AvaloniaCalculator\AvaloniaCalculator.csproj", "{2123482D-DCE5-40A6-AC28-E5FA8B0A0FF5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaloniaCalculator.Android", "AvaloniaCalculator.Android\AvaloniaCalculator.Android.csproj", "{67BBBA84-024B-4D13-A368-3EFAC4B00125}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaloniaCalculator.Desktop", "AvaloniaCalculator.Desktop\AvaloniaCalculator.Desktop.csproj", "{43648E63-8993-454E-BCEE-CD5022E3567B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaloniaCalculator.iOS", "AvaloniaCalculator.iOS\AvaloniaCalculator.iOS.csproj", "{28D2D6E0-0201-4C61-A0A4-A97316F42680}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaloniaCalculator.Browser", "AvaloniaCalculator.Browser\AvaloniaCalculator.Browser.csproj", "{FA153A75-7F17-4EBB-BF6A-C4CF46367F1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvaloniaCalculator.UnitTest", "AvaloniaCalculator.UnitTest\AvaloniaCalculator.UnitTest.csproj", "{351E97EA-0444-472E-AE17-BACB6B697DFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2123482D-DCE5-40A6-AC28-E5FA8B0A0FF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2123482D-DCE5-40A6-AC28-E5FA8B0A0FF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2123482D-DCE5-40A6-AC28-E5FA8B0A0FF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2123482D-DCE5-40A6-AC28-E5FA8B0A0FF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67BBBA84-024B-4D13-A368-3EFAC4B00125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67BBBA84-024B-4D13-A368-3EFAC4B00125}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67BBBA84-024B-4D13-A368-3EFAC4B00125}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{67BBBA84-024B-4D13-A368-3EFAC4B00125}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67BBBA84-024B-4D13-A368-3EFAC4B00125}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67BBBA84-024B-4D13-A368-3EFAC4B00125}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{43648E63-8993-454E-BCEE-CD5022E3567B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43648E63-8993-454E-BCEE-CD5022E3567B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43648E63-8993-454E-BCEE-CD5022E3567B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43648E63-8993-454E-BCEE-CD5022E3567B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28D2D6E0-0201-4C61-A0A4-A97316F42680}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28D2D6E0-0201-4C61-A0A4-A97316F42680}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28D2D6E0-0201-4C61-A0A4-A97316F42680}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{28D2D6E0-0201-4C61-A0A4-A97316F42680}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28D2D6E0-0201-4C61-A0A4-A97316F42680}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28D2D6E0-0201-4C61-A0A4-A97316F42680}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FA153A75-7F17-4EBB-BF6A-C4CF46367F1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA153A75-7F17-4EBB-BF6A-C4CF46367F1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA153A75-7F17-4EBB-BF6A-C4CF46367F1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA153A75-7F17-4EBB-BF6A-C4CF46367F1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{351E97EA-0444-472E-AE17-BACB6B697DFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{351E97EA-0444-472E-AE17-BACB6B697DFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{351E97EA-0444-472E-AE17-BACB6B697DFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{351E97EA-0444-472E-AE17-BACB6B697DFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A618986-AB6C-4D24-A45B-D154DAA28CDF}
+	EndGlobalSection
+EndGlobal

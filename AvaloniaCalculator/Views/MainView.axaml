@@ -1,0 +1,100 @@
+<UserControl
+    x:Class="AvaloniaCalculator.Views.MainView"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:AvaloniaCalculator.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:AvaloniaCalculator.ViewModels"
+    d:DesignHeight="650"
+    d:DesignWidth="400"
+    x:DataType="vm:MainViewModel"
+    mc:Ignorable="d">
+    <Design.DataContext>
+        <!--
+            This only sets the DataContext for the previewer in an IDE,
+            to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs)
+        -->
+        <vm:MainViewModel />
+    </Design.DataContext>
+
+    <Grid RowDefinitions="Auto,*,3*">
+        <TextBlock
+            Grid.Row="0"
+            Margin="8"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Text="Standard" />
+
+        <Grid Grid.Row="1" VerticalAlignment="Stretch">
+            <TextBlock
+                Margin="8"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                FontSize="{Binding $parent.Bounds.Height, Converter={x:Static local:ValueConverters.FontSizeConverter}}"
+                FontWeight="Bold"
+                Text="123" />
+        </Grid>
+
+        <Grid
+            Grid.Row="2"
+            ColumnDefinitions="*,*,*,*"
+            RowDefinitions="*,*,*,*,*,*">
+            <Grid.Styles>
+                <Style Selector="Button">
+                    <Setter Property="HorizontalAlignment" Value="Stretch" />
+                    <Setter Property="HorizontalContentAlignment" Value="Center" />
+                    <Setter Property="VerticalAlignment" Value="Stretch" />
+                    <Setter Property="VerticalContentAlignment" Value="Center" />
+                    <Setter Property="CornerRadius" Value="10" />
+                    <Setter Property="Margin" Value="4" />
+                    <Setter Property="FontSize" Value="{Binding $self.Bounds, Converter={x:Static local:ValueConverters.BoundsToFontSizeConverter}}" />
+                </Style>
+            </Grid.Styles>
+
+            <!--  Row 1  -->
+            <Button>%</Button>
+            <Button Grid.Column="1">CE</Button>
+            <Button Grid.Column="2">C</Button>
+            <Button Grid.Column="3">⌫</Button>
+
+            <!--  Row 2  -->
+            <Button Grid.Row="1">1/x</Button>
+            <Button Grid.Row="1" Grid.Column="1">x²</Button>
+            <Button Grid.Row="1" Grid.Column="2">√</Button>
+            <Button Grid.Row="1" Grid.Column="3">÷</Button>
+
+            <!--  Row 3  -->
+            <Button Grid.Row="2">7</Button>
+            <Button Grid.Row="2" Grid.Column="1">8</Button>
+            <Button Grid.Row="2" Grid.Column="2">9</Button>
+            <Button Grid.Row="2" Grid.Column="3">×</Button>
+
+            <!--  Row 4  -->
+            <Button Grid.Row="3">4</Button>
+            <Button Grid.Row="3" Grid.Column="1">5</Button>
+            <Button Grid.Row="3" Grid.Column="2">6</Button>
+            <Button Grid.Row="3" Grid.Column="3">-</Button>
+
+            <!--  Row 5  -->
+            <Button Grid.Row="4">1</Button>
+            <Button Grid.Row="4" Grid.Column="1">2</Button>
+            <Button Grid.Row="4" Grid.Column="2">3</Button>
+            <Button Grid.Row="4" Grid.Column="3">+</Button>
+
+            <!--  Row 6  -->
+            <Button Grid.Row="5">±</Button>
+            <Button Grid.Row="5" Grid.Column="1">0</Button>
+            <Button Grid.Row="5" Grid.Column="2">.</Button>
+            <Button
+                Grid.Row="5"
+                Grid.Column="3"
+                Background="#0067c0"
+                Foreground="White">
+                =
+            </Button>
+
+
+        </Grid>
+    </Grid>
+</UserControl>

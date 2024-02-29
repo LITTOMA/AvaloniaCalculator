@@ -1,0 +1,17 @@
+<Window
+    x:Class="AvaloniaCalculator.Views.MainWindow"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:views="clr-namespace:AvaloniaCalculator.Views"
+    xmlns:vm="using:AvaloniaCalculator.ViewModels"
+    Title="AvaloniaCalculator"
+    Width="400"
+    Height="650"
+    d:DesignHeight="650"
+    d:DesignWidth="400"
+    Icon="/Assets/avalonia-logo.ico"
+    mc:Ignorable="d">
+    <views:MainView />
+</Window>
